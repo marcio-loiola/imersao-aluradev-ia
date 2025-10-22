@@ -42,6 +42,15 @@ O fluxo de funcionamento do chatbot pode ser resumido nos seguintes passos:
 
 ---
 
+## 📂 Estrutura do Repositório
+
+-   `README.md`: Visão geral do projeto, arquitetura e instruções de uso.
+-   `requirements.txt`: Lista de todas as bibliotecas Python necessárias para executar o projeto.
+-   `build_notebook.py`: **Arquivo-fonte principal.** Este script Python gera o notebook final (`notebook_refatorado.ipynb`). Se você quiser fazer alterações ou melhorias, edite este arquivo.
+-   `notebook_refatorado.ipynb`: O Jupyter Notebook gerado, pronto para ser executado no Google Colab ou localmente. **Não edite este arquivo diretamente**, pois suas alterações serão perdidas na próxima vez que o script de build for executado.
+
+---
+
 ## 🛠️ Tecnologias Utilizadas
 
 - **Linguagem:** Python
@@ -79,3 +88,7 @@ O fluxo de funcionamento do chatbot pode ser resumido nos seguintes passos:
         - Criar os arquivos PDF de exemplo.
         - Construir o pipeline de RAG.
         - Iniciar um chatbot interativo no final para você testar.
+
+5.  **Modificando o Notebook (Avançado):**
+    - O arquivo `notebook_refatorado.ipynb` é gerado automaticamente pelo script `build_notebook.py`.
+    - Se desejar fazer alterações permanentes, edite o script `build_notebook.py` e execute-o (`python build_notebook.py`) para gerar uma nova versão do notebook.
